@@ -210,6 +210,25 @@
       color: var(--muted);
     }
 
+        .bio-intro {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .bio-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 24px;
+      object-fit: cover;
+      object-position: center;
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 40px rgba(31, 41, 51, 0.12);
+      background: var(--surface);
+      display: block;
+    }
+
     .contact-box {
       padding: 32px;
       border-radius: 28px;
@@ -236,6 +255,15 @@
       .section-heading,
       .about {
         grid-template-columns: 1fr;
+      }
+
+      .bio-intro {
+        grid-template-columns: 1fr;
+      }
+
+      .bio-photo {
+        width: 120px;
+        height: 120px;
       }
 
       header {
@@ -354,7 +382,7 @@
               class="bio-photo"
               src="Cormier_Isaac_updated.jpg"
               alt="Portrait of Isaac Cormier"
-          >
+            >
             
           <p>
             Cormier Research Consulting is led by Isaac Cormier, BSc (Hons), a research
